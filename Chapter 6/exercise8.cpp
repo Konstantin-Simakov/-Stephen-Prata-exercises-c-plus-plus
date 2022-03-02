@@ -25,7 +25,8 @@ int main(void)
 	int count = 0;			// the number of all characters in the file
 	while (fin.get(temp))
 		count++;
-
+	fin.close();
+	
 	cout << count << " characters in the file \"" << filename << "\".\n";
 
 	return 0;

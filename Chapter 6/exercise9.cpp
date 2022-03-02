@@ -47,7 +47,7 @@ int main(void)
 			while (fin.get() != '\n')
 				continue;
 	}
-
+	fin.close();
 
 	// data output
 	const int GRAND = 10000;

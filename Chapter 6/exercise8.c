@@ -30,6 +30,7 @@ int main(void)
 
 	while ((temp = getc(fp)) != EOF)
 		count++;
+	fclose(fp);
 
 	printf("%d characters in the file \"%s\".\n", count, filename);
 
