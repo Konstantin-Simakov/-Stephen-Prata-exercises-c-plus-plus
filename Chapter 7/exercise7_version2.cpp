@@ -2,8 +2,6 @@
 // Only the revalue() function differs compared to one from exercise7.cpp .
 #include <iostream>
 
-const int MAX = 5;
-
 // Function prototypes
 double * fill_array(double * begin, double * end);
 void show_array(const double * begin, const double * end);
@@ -12,6 +10,7 @@ void revalue(double value, double * begin, double * end);
 int main(void)
 {
 	using namespace std;
+	const int MAX = 5;
 	double properties[MAX];
 	double * last = properties;
 	
