@@ -7,6 +7,7 @@ double multiply(double, double);
 double divide(double, double);
 double calculate(double, double, double (*)(double, double));
 void display(double, double, double (*[])(double, double), int);
+// Or: void display(double, double, double (**)(double, double), int);
 
 int main(void)
 {
