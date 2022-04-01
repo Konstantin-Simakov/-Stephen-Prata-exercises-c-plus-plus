@@ -42,7 +42,7 @@ void display(double x, double y, double (* ppf[])(double, double), int n)
 		else if (divide == ppf[i])
 			cout << x << " / " << y << " = ";
 		else
-			cout << "Incorrect address of function is given.\n";
+			cout << "Invalid function address passed.\n";
 		cout << calculate(x, y, ppf[i]) << endl;
 	}
 }
