@@ -12,7 +12,7 @@ int main(void)
 	while (cin >> num && num >= 0)
 	{
 		cout << num << "! = " << factorial(num) << endl;
-		cout << "Enter the next number (q negative number to quit): ";
+		cout << "Enter the next number (q or negative number to quit): ";
 	}
 	cout << "Bye.\n";
 
