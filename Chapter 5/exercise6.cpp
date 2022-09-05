@@ -5,8 +5,9 @@ int main(void)
 {
 	using namespace std;
 	const int MONTHS = 12;
-	const char * months[MONTHS] = { "Jan", "Feb", "Mar", 
-			"Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+	const char * months[MONTHS] = { 
+		"Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+		"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 	};
 	const int YEARS = 3;
 	int sales[YEARS][MONTHS];		// in books, not money
