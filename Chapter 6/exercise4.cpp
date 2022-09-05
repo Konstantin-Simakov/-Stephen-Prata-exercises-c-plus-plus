@@ -17,9 +17,9 @@ int main(void)
 {
 	const int ARSIZE = 3;
 	bop staff[ARSIZE] = {
-		{ "Wimp Macho", 	"junior", 	"Junior Programmer", 	0 },
-		{ "Raki Rhodes", 	"middle", 	"MIPS", 				1 },
-		{ "Hoppy Hattman", 	"senior", 	"Loopy", 				2 }
+		{"Wimp Macho", 		"junior", "Junior Programmer", 	0},
+		{"Raki Rhodes", 	"middle", "MIPS", 				1},
+		{"Hoppy Hattman", 	"senior", "Loopy", 				2}
 	};
 
 	show_menu();
