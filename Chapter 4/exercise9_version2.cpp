@@ -15,7 +15,7 @@ struct Candy_bar {
 int main(void)
 {
 	using namespace std;
-	Candy_bar * sweets = new Candy_bar [3];
+	Candy_bar * sweets = new Candy_bar[3];
 	
 	sweets[0].name = "Mocha Munch";
 	sweets[0].weight = 2.3f;

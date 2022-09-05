@@ -11,9 +11,9 @@ int main(void)
 {
 	using namespace std;
 	Candy_bar sweets[3] = {
-		{ "Mocha Munch", 2.3, 350 }, 
-		{ "Bounty", 	 2.1, 455 }, 
-		{ "Snickers", 	 3.1, 700 } 
+		{"Mocha Munch", 2.3, 350}, 
+		{"Bounty", 	 	2.1, 455}, 
+		{"Snickers", 	3.1, 700} 
 	};
 
 	// outputting the contents of the array as a table
