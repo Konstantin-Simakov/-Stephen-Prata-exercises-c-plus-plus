@@ -1,4 +1,4 @@
-// exercise8_b.cpp
+// exercise8_b.cpp -- Chapter 7
 #include <iostream>
 
 const int SEASONS = 4;
