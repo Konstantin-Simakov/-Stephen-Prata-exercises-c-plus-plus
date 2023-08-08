@@ -1,5 +1,5 @@
 // exercise7.cpp -- Chapter 7
-// Only the revalue() function differs compared to one from exercise7_verison2.cpp .
+// Only the revalue() function differs compared to one from exercise7_verison2.cpp.
 #include <iostream>
 
 // Function prototypes
