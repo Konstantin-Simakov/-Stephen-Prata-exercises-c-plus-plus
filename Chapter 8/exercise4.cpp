@@ -2,19 +2,19 @@
 #include <iostream>
 #include <cstring>			// For strlen(), strcpy()
 
-struct stringy {
+struct Stringy {
 	char * str;				// Points to a string
 	int ct;					// String length
 };
 
-void set(stringy & s1, const char * s2);
-void del(stringy & s1);
-void show(const stringy & s1, int times = 1);
+void set(Stringy & s1, const char * s2);
+void del(Stringy & s1);
+void show(const Stringy & s1, int times = 1);
 void show(const char * s2, int times = 1);
 
 int main(void)
 {
-	stringy beany;
+	Stringy beany;
 	char testing[] = "Reality isn\'t what it used to be.";
 
 	set(beany, testing);
@@ -31,19 +31,19 @@ int main(void)
 	return 0;
 }
 
-void set(stringy & s1, const char * s2)
+void set(Stringy & s1, const char * s2)
 {
 	s1.ct = strlen(s2);
 	s1.str = new char[s1.ct + 1];
 	strcpy(s1.str, s2);
 }
 
-void del(stringy & s1)
+void del(Stringy & s1)
 {
 	delete [] s1.str;
 }
 
-void show(const stringy & s1, int times)
+void show(const Stringy & s1, int times)
 {
 	for (int i = 0; i < times; i++)
 		std::cout << s1.str << std::endl;
