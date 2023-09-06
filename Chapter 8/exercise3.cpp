@@ -25,6 +25,6 @@ int main(void)
 
 void to_upper_str(std::string & str)
 {
-	for (int i = 0; str[i] != '\0'; i++)
+	for (int i = 0; i < str.size(); i++)
 		str[i] = toupper(str[i]);
 }
