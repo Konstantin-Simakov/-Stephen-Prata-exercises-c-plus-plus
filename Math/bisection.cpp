@@ -1,9 +1,11 @@
 // bisection.cpp
-// Segment division method in half.
-// a ~ 0, b ~ 2 for this function (see below).
+// Segment division method in half for f(x) = 0.
+// a ~ 0, b ~ 2 for this function (see below), 
+// e.g. a = 0.015, b = 1.995 and calculations will run.
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <cstdlib>
 #include <cfloat>
 using namespace std;
 
@@ -22,7 +24,18 @@ int main(void)
     cin >> b;
 
     // Data calculations and output.
-    bisection(a, b);
+    // Check that the Bolzano-Cauchy theorem is satisfied for this segment [a, b].
+    if (a < b && (math_func(a) * math_func(b)) < 0)
+    {
+        double x = bisection(a, b);
+        cout << "\nSolving the equation f(x) = 0, obtained x ~ " << x << endl;
+    }
+    else
+    {
+        cout << "Incorrect input a, b. You need to enter another.\n";
+        cout << "Program terminated.\n";
+        exit(EXIT_FAILURE);
+    }
 
     return 0;
 }
@@ -39,9 +52,9 @@ double bisection(double x_left, double x_right)
     double x_middle = x_left + x_distance;
     
     // Calculations with output.
-    cout << right << fixed << setprecision(5);
+    cout << endl << right << fixed << setprecision(5);
     cout << setw(WIDTH) << "a" << setw(WIDTH) << "b"
-         << setw(WIDTH) << "dx" << setw(WIDTH) << "x" << setw(WIDTH) << "y" << endl;
+         << setw(WIDTH) << "dx" << setw(WIDTH) << "x" << setw(WIDTH) << "f(x)" << endl;
     cout << setw(WIDTH) << x_left << setw(WIDTH) << x_right
          << setw(WIDTH) << x_distance << setw(WIDTH) << x_middle << setw(WIDTH) << math_func(x_middle) << endl;
 
